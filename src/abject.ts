@@ -4,7 +4,7 @@ declare namespace abject {
   export type Fn<T extends object, R extends {[k: string]: any}> = (
     obj: T,
     aliasObj: {[k in keyof R]: string}
-  ) => <K extends keyof R>(key: K) => R[typeof key]
+  ) => <K extends keyof R>(key: K) => R[typeof key] | undefined
 }
 
 const abject = <T extends object, R extends object>(
