@@ -1,7 +1,7 @@
 {
   "name": "abject",
   "description": "Get property value from an object by alias name",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "types": "dist/abject.d.ts",
   "main": "dist/abject.js",
   "umd:main": "dist/abject.umd.js",
