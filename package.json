@@ -29,6 +29,7 @@
   "devDependencies": {
     "@geekcojp/tslint-config": "^0.1.2",
     "@types/jest": "^22.2.0",
+    "coveralls": "^3.0.0",
     "jest": "^22.4.2",
     "microbundle": "^0.4.4",
     "prettier": "^1.11.1",
