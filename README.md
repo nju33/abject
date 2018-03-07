@@ -20,7 +20,7 @@ yarn add [-D] abject
 ## Usage
 
 ```ts
-import abject from './abject';
+import abject = require('./abject');
 
 const post = {
   post: {
