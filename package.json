@@ -1,0 +1,56 @@
+{
+  "name": "abject",
+  "description": "Get property value from an object by alias name",
+  "version": "0.0.0",
+  "types": "dist/abject.d.ts",
+  "main": "dist/abject.js",
+  "umd:main": "dist/abject.umd.js",
+  "module": "dist/abject.m.js",
+  "source": "src/abject.ts",
+  "repository": "git@github.com:nju33/abject.git",
+  "author": "nju33 <nju33.ki@gmail.com>",
+  "publishConfig": {
+    "access": "public"
+  },
+  "license": "MIT",
+  "keywords": [
+    "object",
+    "alias"
+  ],
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "prepare": "yarn build",
+    "build": "microbundle -i src/abject.ts",
+    "test": "jest",
+    "coveralls": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
+  },
+  "devDependencies": {
+    "@geekcojp/tslint-config": "^0.1.2",
+    "@types/jest": "^22.2.0",
+    "jest": "^22.4.2",
+    "microbundle": "^0.4.4",
+    "prettier": "^1.11.1",
+    "ts-jest": "^22.4.1",
+    "tslint": "^5.9.1",
+    "typescript": "^2.7.2"
+  },
+  "dependencies": {
+    "@types/dot-prop": "^4.2.0",
+    "dot-prop": "^4.2.0"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "transform": {
+      "^.+\\.(ts|tsx)$": "ts-jest"
+    },
+    "testMatch": [
+      "**/*.test.ts"
+    ]
+  }
+}
