@@ -53,6 +53,10 @@ interface IdealPost {
 
 const idealPostAbject = abject as abject.Fn<typeof post, IdealPost>;
 
+/**
+ * Register an alias with its actual path
+ * `{ alias: actualPath }`
+ */
 const idealPost = idealPostAbject(post, {
   id: 'post.id',
   title: 'post.title',
